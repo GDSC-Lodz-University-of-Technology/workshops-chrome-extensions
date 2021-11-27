@@ -1,0 +1,29 @@
+{
+    "name": "DarkW3",
+    "version": "1.0",
+    "manifest_version": 3,
+
+    "description": "Extension that add dark mode to w3school site",
+    "action": {
+        "default_popup": "popup.html",
+        "default_icons": {
+            "16": "icons/logo_16x16.png",
+            "32": "icons/logo_32x32.png",
+            "48": "icons/logo_48x48.png",
+            "64": "icons/logo_64x64.png"
+        }
+    },
+    "icons": {
+        "16": "icons/logo_16x16.png",
+        "32": "icons/logo_32x32.png",
+        "48": "icons/logo_48x48.png",
+        "64": "icons/logo_64x64.png"
+    },
+
+    "permissions":["storage", "scripting"],
+    "host_permissions": ["https://www.w3schools.com/*"],
+    "background":{
+        "service_worker": "./background.js"
+    },
+    "options_page": "options.html"
+}
