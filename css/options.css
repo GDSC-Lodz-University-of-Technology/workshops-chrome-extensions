@@ -1,0 +1,47 @@
+body {
+  background-color: #777;
+}
+.darkTheme {
+  background-color: #000;
+  color: #fff;
+}
+.lightTheme {
+  background-color: #fff;
+  color: #000;
+}
+.theme {
+  padding: 30px;
+  margin: 30px;
+}
+.themes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.area > p > input {
+  margin: 0 20px;
+}
+
+#submit {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  background-color: #ee4;
+  color: #000;
+  cursor: pointer;
+}
+
+#submit:active {
+  transform: translateY(1px);
+}

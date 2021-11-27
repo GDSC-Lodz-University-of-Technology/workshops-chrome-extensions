@@ -1,0 +1,13 @@
+{
+    "elements": [
+        ["#main", ".exerciseprecontainer", "#quizcontainer"],
+        [
+          "body > div.w3-bar.w3-card-2.notranslate",
+          "#belowtopnav > div.w3-row",
+          ".w3-panel",
+          ".exercisewindow",
+          ".radiocontainer"
+        ],
+        [".w3-example", "#leftmenuinnerinner", "#right", "#footer"]
+      ]
+}

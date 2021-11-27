@@ -1,0 +1,22 @@
+:root {
+  --colors-bg-extension-0: transparent;
+  --colors-txt-extension-0: transparent;
+  --colors-bg-extension-1: transparent;
+  --colors-txt-extension-1: transparent;
+  --colors-bg-extension-2: transparent;
+  --colors-txt-extension-2: transparent;
+
+}
+
+.extension-dark0 {
+  background-color: var(--colors-bg-extension-0) !important;
+  color: var(--colors-txt-extension-0) !important;
+}
+.extension-dark1 {
+  background-color: var(--colors-bg-extension-1) !important;
+  color: var(--colors-txt-extension-1) !important;
+}
+.extension-dark2 {
+  background-color: var(--colors-bg-extension-2) !important;
+  color: var(--colors-txt-extension-2) !important;
+}
