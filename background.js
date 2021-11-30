@@ -5,7 +5,7 @@ chrome.runtime.onInstalled.addListener(() => {
     dark: true,
     colors: [
       {
-        color: "#ff0000",
+        color: "#333333",
         text: "#eeeeee",
       },
       {
