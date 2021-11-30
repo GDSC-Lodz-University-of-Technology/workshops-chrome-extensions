@@ -9,7 +9,7 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
       chrome.scripting
         .insertCSS({
           target: { tabId: tabId },
-          files: ["./css/dark.css"],
+          files: ["./css/style.css"],
         })
         .then(() => {
           console.log("css inserted");
