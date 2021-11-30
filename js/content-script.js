@@ -1,34 +1,42 @@
-console.log('content script is working');
-
-const elements = [
-        ["#main", ".exerciseprecontainer", "#quizcontainer"],
-        [
-          "body > div.w3-bar.w3-card-2.notranslate",
-          "#belowtopnav > div.w3-row",
-          ".w3-panel",
-          ".exercisewindow",
-          ".radiocontainer"
-        ],
-        [".w3-example", "#leftmenuinnerinner", "#right", "#footer"]
-      ];
-
-
+console.log("content script is working");
 
 const changeClases = (toDark) => {
-
-    elements.forEach((layer, id) => {
-        layer.forEach((path) => {
-          document.querySelectorAll(path).forEach((element) => {
-              console.log(element);
-            if (toDark) {
-              element.classList.add("extension-dark" + id);
-            } else {
-              element.classList.remove("extension-dark" + id);
-            }
-          });
+  chrome.storage.sync.get(["elements"], (result) => {
+    result.elements.forEach((layer, id) => {
+      layer.forEach((path) => {
+        document.querySelectorAll(path).forEach((element) => {
+          if (toDark) {
+            element.classList.add("extension-dark" + id);
+          } else {
+            element.classList.remove("extension-dark" + id);
+          }
         });
       });
+    });
+  });
+};
 
-}
+const changeColors = () => {
+  chrome.storage.sync.get(["colors"], (result) => {
+    for (const [key, value] of Object.entries(result)) {
+      value.forEach((layer, id) => {
+        document.documentElement.style.setProperty(
+          `--colors-bg-extension-${id}`,
+          layer.color
+        );
+        document.documentElement.style.setProperty(
+          `--colors-txt-extension-${id}`,
+          layer.text
+        );
+      });
+    }
+  });
+};
 
-changeClases(true);
+const getTheme = () => {
+  chrome.storage.sync.get(["dark"], (result) => {
+    changeClases(result.dark);
+  });
+};
+changeColors();
+getTheme();

@@ -1,5 +1,36 @@
 console.log('service worker is working');
 
+chrome.runtime.onInstalled.addListener(() => {
+  chrome.storage.sync.set({
+    dark: true,
+    colors: [
+      {
+        color: "#ff0000",
+        text: "#eeeeee",
+      },
+      {
+        color: "#000000",
+        text: "#eeeeee",
+      },
+      {
+        color: "#555555",
+        text: "#eeeeee",
+      },
+    ],
+    elements: [
+      ["#main", ".exerciseprecontainer", "#quizcontainer"],
+      [
+        "body > div.w3-bar.w3-card-2.notranslate",
+        "#belowtopnav > div.w3-row",
+        ".w3-panel",
+        ".exercisewindow",
+        ".radiocontainer",
+      ],
+      [".w3-example", "#leftmenuinnerinner", "#right", "#footer"],
+    ],
+  });
+});
+
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
   if (!!tab.url)
     if (
