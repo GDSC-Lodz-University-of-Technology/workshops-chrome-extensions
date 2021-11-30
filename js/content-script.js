@@ -1,5 +1,9 @@
 console.log("content script is working");
 
+document
+  .querySelectorAll(".w3-white")
+  .forEach((element) => element.classList.remove("w3-white"));
+
 const changeClases = (toDark) => {
   chrome.storage.sync.get(["elements"], (result) => {
     result.elements.forEach((layer, id) => {
@@ -33,7 +37,6 @@ const changeColors = () => {
   });
 };
 
-
 const getTheme = () => {
   chrome.storage.sync.get(["dark"], (result) => {
     changeClases(result.dark);
@@ -41,11 +44,11 @@ const getTheme = () => {
 };
 
 chrome.storage.onChanged.addListener(function (changes, namespace) {
-    if (changes.dark != undefined) {
-        changeClases(changes.dark.newValue);
-    } else {
-      changeColors();
-    }
+  if (changes.dark != undefined) {
+    changeClases(changes.dark.newValue);
+  } else {
+    changeColors();
+  }
 });
 
 changeColors();

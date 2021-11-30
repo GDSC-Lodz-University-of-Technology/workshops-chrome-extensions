@@ -1,4 +1,4 @@
-console.log('service worker is working');
+console.log("service worker is working");
 
 chrome.runtime.onInstalled.addListener(() => {
   chrome.storage.sync.set({
@@ -29,6 +29,7 @@ chrome.runtime.onInstalled.addListener(() => {
       [".w3-example", "#leftmenuinnerinner", "#right", "#footer"],
     ],
   });
+  chrome.action.setBadgeText({ text: "ON" });
 });
 
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
