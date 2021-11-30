@@ -1,10 +1,10 @@
 :root {
-  --colors-bg-extension-0: #333333;
-  --colors-txt-extension-0: #eeeeee;
-  --colors-bg-extension-1: #000000;
-  --colors-txt-extension-1: #eeeeee;
-  --colors-bg-extension-2: #555555;
-  --colors-txt-extension-2: #eeeeee;
+  --colors-bg-extension-0: transparent;
+  --colors-txt-extension-0: inherit;
+  --colors-bg-extension-1: transparent;
+  --colors-txt-extension-1: inherit;
+  --colors-bg-extension-2: transparent;
+  --colors-txt-extension-2: inherit;
 }
 
 .extension-dark0 {

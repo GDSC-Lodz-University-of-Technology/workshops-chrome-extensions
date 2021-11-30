@@ -33,10 +33,20 @@ const changeColors = () => {
   });
 };
 
+
 const getTheme = () => {
   chrome.storage.sync.get(["dark"], (result) => {
     changeClases(result.dark);
   });
 };
+
+chrome.storage.onChanged.addListener(function (changes, namespace) {
+    if (changes.dark != undefined) {
+        changeClases(changes.dark.newValue);
+    } else {
+      changeColors();
+    }
+});
+
 changeColors();
 getTheme();
