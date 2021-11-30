@@ -10,3 +10,7 @@ document.querySelector('#dark-mode-toggle').addEventListener('change', (e)=>{
         console.log('changed');
     })
 })
+
+document.querySelector('#options').addEventListener('click', ()=>{
+    chrome.runtime.openOptionsPage();
+})
