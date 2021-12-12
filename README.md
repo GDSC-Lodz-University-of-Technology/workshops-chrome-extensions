@@ -44,8 +44,6 @@ At the end of this workshop, you will lern how to make basic extension for chrom
 
 # Resources
 
- - **_[Presentation](https://github.com/GDSC-Lodz-University-of-Technology/workshops-web-components/blob/master/workshop-web-components-presentation.pdf)_**
- - **_[YouTube stream](https://www.youtube.com/watch?v=56XHrRDHrRQ)_**
- - **_[Intro to WebComponent(article)](https://developers.google.com/web/fundamentals/web-components/customelements#shadowdom)_**
- - **_[Styling WebComponents(article)](https://www.smashingmagazine.com/2016/12/styling-web-components-using-a-shared-style-sheet/)_**
- - **_[How to Publish Web Components to NPM(article)](https://justinfagnani.com/2019/11/01/how-to-publish-web-components-to-npm/)_**
+ - **_[Presentation](https://github.com/GDSC-Lodz-University-of-Technology/workshops-chrome-extensions/blob/main/workshop-chrome-extensions-presentration.pdf)_**
+ - **_[YouTube stream](https://youtu.be/ui4RC9Ht0qc)_**
+ - **_[Chrome Extension documentation](https://developer.chrome.com/docs/extensions/)_**
