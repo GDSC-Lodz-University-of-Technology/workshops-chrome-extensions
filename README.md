@@ -24,6 +24,7 @@ Before you will use this repository make sure that you have installed:
   ```bash
   git clone https://github.com/GDSC-Lodz-University-of-Technology/workshops-chrome-extensions.git
   cd ./workshops-chrome-extensions
+  git checkout 0-setup
   ```
 
 ## Using this repository
