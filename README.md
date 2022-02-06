@@ -35,12 +35,12 @@ Before you will use this repository make sure that you have installed:
 
 ## Workshops aim
 
-At the end of this workshop, you will lern how to make basic extension for chromium based browsers using JavaScript, HTML and CSS.
+At the end of this workshop, you will learn how to make a basic extension for chromium based browsers using JavaScript, HTML and CSS.
 
 # Workshops extension
 
- - Extension will add a dark mode to w3shool site
- - User can controll app from popup
+ - Extension will add a dark mode to w3shcools site
+ - User can control app from popup
  - Colors can be changed in options page
 
 # Resources
